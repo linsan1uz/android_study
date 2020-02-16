@@ -32,6 +32,7 @@ public class MLinearLayout extends LinearLayout {
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         Log.e("ttit", "MLinearLayout ://////dispatchTouchEvent");
-        return super.dispatchTouchEvent(ev);
+//        return super.dispatchTouchEvent(ev);
+        return true;
     }
 }
