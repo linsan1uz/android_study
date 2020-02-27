@@ -29,6 +29,34 @@ public class FirstActivity extends AppCompatActivity {
                 startActivity(in);
             }
         });
+
+        Button btn2 = findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(FirstActivity.this, ThirdActivity.class);
+                //1.传单个数据
+//                in.putExtra("test","TTIT");
+//                in.putExtra("number",100);
+                //2.传多个数据
+                Bundle b = new Bundle();
+                b.putInt("number", 100);
+                b.putString("test", "TTIT");
+                in.putExtras(b);
+//                startActivity(in);
+
+                //返回数据给FirstActivity
+//                startActivityForResult(in, 1001);
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.e("tag", "requestCode =" + requestCode);
+        Log.e("tag", "resultCode =" + resultCode);
+        Log.e("tag", "data =" + data.getStringExtra("back"));
     }
 
     @Override

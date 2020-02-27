@@ -6,17 +6,24 @@
     android:orientation="vertical">
 
     <TextView
-        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="我是FirstActivity"
+        android:textAllCaps="false"
         android:textColor="@color/color2"
-        android:textSize="30sp"
-        android:text="我是FirstActivity" />
+        android:textSize="30sp" />
 
     <Button
-        android:textAllCaps="false"
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="跳转到SecondActivity"/>
+        android:text="跳转到SecondActivity"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到ThirdActivity"
+        android:textAllCaps="false" />
 </LinearLayout>
