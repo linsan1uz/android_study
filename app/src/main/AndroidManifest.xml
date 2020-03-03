@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ttit.core.taskstack.Aactivity"
+        <activity
+            android:name="com.ttit.core.service.Service2Activity"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +33,9 @@
         <activity
             android:name="com.ttit.core.taskstack.Cactivity"
             android:launchMode="standard" />
+        <!-- 配置Service组件,同时配置一个action -->
+        <service android:name="com.ttit.core.service.MyService1"/>
+        <service android:name="com.ttit.core.service.MyService2"/>
     </application>
 
 </manifest>
