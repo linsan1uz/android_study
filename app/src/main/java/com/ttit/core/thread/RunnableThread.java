@@ -1,4 +1,4 @@
-package com.ttit.core;
+package com.ttit.core.thread;
 
 public class RunnableThread implements Runnable {
 

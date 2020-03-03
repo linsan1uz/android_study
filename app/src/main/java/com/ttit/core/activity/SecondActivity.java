@@ -1,4 +1,4 @@
-package com.ttit.core;
+package com.ttit.core.activity;
 
 import android.os.Bundle;
 import android.util.Log;

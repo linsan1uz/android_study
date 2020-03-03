@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ttit.core.Aactivity"
+        <activity android:name="com.ttit.core.taskstack.Aactivity"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,19 +18,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.ttit.core.SecondActivity"
+            android:name="com.ttit.core.activity.SecondActivity"
             android:theme="@style/Theme.AppCompat.Dialog">
             <intent-filter>
                 <action android:name="com.ttit.core.action.SecondActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ttit.core.ThirdActivity" />
+        <activity android:name="com.ttit.core.activity.ThirdActivity" />
         <activity
-            android:name="com.ttit.core.Bactivity"
+            android:name="com.ttit.core.taskstack.Bactivity"
             android:launchMode="singleInstance" />
         <activity
-            android:name="com.ttit.core.Cactivity"
+            android:name="com.ttit.core.taskstack.Cactivity"
             android:launchMode="standard" />
     </application>
 

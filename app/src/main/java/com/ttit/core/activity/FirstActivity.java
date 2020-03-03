@@ -1,4 +1,4 @@
-package com.ttit.core;
+package com.ttit.core.activity;
 
 import android.content.Intent;
 import android.os.Bundle;

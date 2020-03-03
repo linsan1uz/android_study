@@ -1,4 +1,4 @@
-package com.ttit.core;
+package com.ttit.core.thread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
