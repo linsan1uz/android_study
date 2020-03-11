@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ttit.helloworld">
-
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.ttit.core.service.Service2Activity"
+            android:name="com.ttit.core.broadcastreceiver.AActivity"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,9 +34,17 @@
         <activity
             android:name="com.ttit.core.taskstack.Cactivity"
             android:launchMode="standard" />
+        <activity android:name="com.ttit.core.broadcastreceiver.BActivity"/>
         <!-- 配置Service组件,同时配置一个action -->
-        <service android:name="com.ttit.core.service.MyService1"/>
-        <service android:name="com.ttit.core.service.MyService2"/>
+        <service android:name="com.ttit.core.service.MyService1" />
+        <service android:name="com.ttit.core.service.MyService2" />
+
+
+        <receiver android:name="com.ttit.core.broadcastreceiver.StaticBRReceiver">
+            <intent-filter>
+                <action android:name="com.example.broadcasttest.StaticBRReceiver" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
