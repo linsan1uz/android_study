@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.ttit.helloworld.R;
 
+
 public class ContentProvider2Activity extends AppCompatActivity {
     private Button btninsert;
 
